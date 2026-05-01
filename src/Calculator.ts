@@ -8,10 +8,10 @@ export class Calculator {
   /** 最大有効桁数（. と - は除外） */
   static readonly MAX_DIGITS = 8;
 
-  /** 表示インタフェース */
+  /** 表示インタフェース（UI層との接続） */
   private readonly display: IDisplay;
 
-  /** 入力中オペランド管理 */
+  /** 入力中の数値を文字列として管理するバッファ*/
   private readonly buffer: InputBuffer;
 
   /** 計算実行クラス */
